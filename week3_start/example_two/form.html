@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="safari-only">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Web Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Montserrat:wght@400;700&family=Quicksand&display=swap"
+        rel="stylesheet">
+    <!-- daterangepicker.js library-->
+
+    <!-- normalize-->
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css">
+    <link href="main.css" rel="stylesheet">
+    <title>Styling An HTML Form</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1> Styling Web Forms with CSS </h1>
+        <h2> The Good, The Bad & The Ugly</h2>
+        <form>
+            <fieldset>
+                <legend> Full Name </legend>
+                <label for="firstname">First Name</label>
+                <input name="firstname" id="firstname" placeholder="Your first name here">
+                <label for="lastname">Last Name</label>
+                <input name="lastname" id="lastname" placeholder="Your last name here">
+            </fieldset>
+
+            <fieldset>
+                <legend> Personal Info </legend>
+                <div class="twocol">
+                    <label for="bdate"> Birthday </label>
+                    <input id="bdate" name="bdate" type="text">
+                    <label for="age"> Age </label>
+                    <input id="age" name="age" type="number" placeholder="Tell us your age">
+                </div>
+            </fieldset>
+
+            <p> Additonal Informaton: </p>
+            <textarea></textarea>
+            <input type="submit" value="Submit Info" name="submit">
+        </form>
+    </div>
+</body>
+
+</html>
