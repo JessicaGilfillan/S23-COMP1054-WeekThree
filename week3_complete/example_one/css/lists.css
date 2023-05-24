@@ -13,20 +13,58 @@ Open the page in several browsers - are the styles consistent across browsers?
 
 /* HANDLING LIST SPACING */
 
+ul, 
+ol, 
+dl {
+    /*font-size: 18px;*/ 
+    font-size: 1.8rem; 
+}
 
+li, 
+dd, 
+dt {
+    line-height: 1.6; 
+}
+
+dt {
+    font-weight: 500; 
+}
 /* LIST SPECIFIC STYLES */
 
 /* bullet styles */
-
+ol {
+   list-style-type:lower-roman; 
+}
 
 /* bullet position */ 
 
+ol, 
+ul {
+    list-style-position: inside; 
+}
 
 /* bullet images */ 
 
+main ul {
+    list-style-image: url('../assets/teaspoon.png');
+}
 
 /* LIST STYLE SHORTHAND */
 
+main ul {
+    list-style:square; 
+    list-style-image: url('../assets/teaspoon.png');
+    list-style-position: inside; 
+}
+
+main ul {
+    list-style: square url('../assets/teaspoon.png') inside; 
+}
+
+
+
+
+/* CONTROLLING LIST COUNTING */ 
 
 
 /*Adapted from https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_lists */

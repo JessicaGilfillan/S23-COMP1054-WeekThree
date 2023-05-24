@@ -1,0 +1,64 @@
+/* STYLING TABLES */
+
+/* DEFAULT STYLES 
+
+Before we style the table, check out the default styling being applied. 
+Open the page in several browsers - are the styles consistent across browsers? 
+
+*/
+
+/* SPACING & LAYOUT */
+
+table {
+    table-layout: fixed; 
+    width: 100%; 
+    border-collapse: collapse;
+    border: 2px solid #f2f1f1; 
+    font-size: 1.4rem; 
+}
+
+thead th:nth-child(1),
+thead th:nth-child(3){
+    width: 40%; 
+}
+
+thead th:nth-child(2) {
+    width: 20%; 
+}
+
+th, 
+td {
+ padding: 15px; 
+}
+
+/* TABLE TYPOGRAPHY  & APPEARANCE */
+
+thead th {
+    text-align: left; 
+    text-decoration: underline;
+}
+
+tbody tr td:nth-of-type(2),
+tbody tr td:nth-of-type(3) {
+    text-align:center; 
+}
+
+tfoot td {
+    font-size: 1.4rem; 
+    font-style: italic; 
+}
+
+/* zebra striping */ 
+
+tbody tr:nth-of-type(odd) {
+    background-color: #f2f1f1;
+}
+
+ 
+
+
+
+/* Adapted from https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Styling_tables */
+
+
+
