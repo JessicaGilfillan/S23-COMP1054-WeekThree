@@ -9,8 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Montserrat:wght@400;700&family=Quicksand&display=swap"
-        rel="stylesheet">
+    rel="stylesheet">
     <!-- daterangepicker.js library-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
     <!-- normalize-->
     <link rel="stylesheet" href="https://unpkg.com/normalize.css">
@@ -35,17 +39,27 @@
                 <legend> Personal Info </legend>
                 <div class="twocol">
                     <label for="bdate"> Birthday </label>
-                    <input id="bdate" name="bdate" type="date">
+                    <input id="bdate" name="bdate" type="text">
                     <label for="age"> Age </label>
                     <input id="age" name="age" type="number" placeholder="Tell us your age">
                 </div>
             </fieldset>
 
-            <p> Additonal Informaton: </p>
-            <textarea></textarea>
+            <fieldset>
+                <p> Additonal Informaton: </p>
+                <textarea></textarea>
+            </fieldset>
             <input type="submit" value="Submit Info" name="submit">
         </form>
     </div>
+    <script>
+        $(function() {
+            $('#bdate').daterangepicker({
+                singleDatePicker: true,
+                openWidgetOnFocus: false
+            });
+        }); 
+    </script>
 </body>
 
 </html>
