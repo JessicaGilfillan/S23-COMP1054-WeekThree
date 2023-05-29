@@ -118,6 +118,8 @@ input::placeholder {
     opacity: 1; 
 }
 
+/* for datepicker placeholder text in safari 
+
 @supports (-webkit-backdrop-filter: blur(1px)) {
     input[type="date"] {
       padding-top: 8px; 
@@ -126,6 +128,7 @@ input::placeholder {
     }
 }
 
+*/
 
 /* The Ugly * / 
 
@@ -135,6 +138,3 @@ input::placeholder {
 
 we don't have any access to style the datepicker calendar/components - so often need to use a js library to help us out - in this case we've used https://www.daterangepicker.com/ -->
 
-
-
-/* for datepicker placeholder text in safari */ 
