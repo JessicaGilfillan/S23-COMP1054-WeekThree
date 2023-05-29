@@ -109,6 +109,8 @@ input[type="submit"] {
     padding-left: 0; 
 }
 
+
+
 /* 2. The Bad */ 
 
 /* placeholders*/ 
@@ -118,14 +120,14 @@ input::placeholder {
     opacity: 1; 
 }
 
+/* for datepicker placeholder text in safari */ 
+
 @supports (-webkit-backdrop-filter: blur(1px)) {
-    input[type="date"] {
-      padding-top: 8px; 
-      color: #333;
-      opacity :1; 
+    input[name="bdate"] {
+        padding-top: 8px; 
+        color: #272b2e;
     }
 }
-
 
 /* The Ugly * / 
 
@@ -137,4 +139,4 @@ we don't have any access to style the datepicker calendar/components - so often 
 
 
 
-/* for datepicker placeholder text in safari */ 
+

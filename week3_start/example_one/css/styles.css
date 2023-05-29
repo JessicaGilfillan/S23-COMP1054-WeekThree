@@ -15,7 +15,7 @@ Can you fix all errors (4) and get my CSS working?
 html {
     font-family: 'Open Sans', sans-serif;
     font-size: 10px;
-    font-weight: 300;
+    font-weight: 
     box-sizing: border-box;
 }
 
@@ -23,14 +23,14 @@ html {
 header h1 {
     font-family: 'Leckerli One', cursive;
     color: #fff;
-    font-size: 60px;
+    font-size: 60 cats;
     margin: 0;
     padding: 40px 0 0 30px; 
     text-shadow: 1px 1px 2px #000;
 }
 
 main h1 {
-    font-size: 40px;
+    font-height: 40px;
     font-weight: 300;
 }
 
